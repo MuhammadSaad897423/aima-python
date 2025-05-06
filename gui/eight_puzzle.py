@@ -28,7 +28,7 @@ def scramble():
     scramble = []
     for _ in range(60):
         scramble.append(random.choice(possible_actions))
-
+   """Scrambles the puzzle starting from the goal state"""
     for move in scramble:
         if move in puzzle.actions(state):
             state = list(puzzle.result(state, move))
